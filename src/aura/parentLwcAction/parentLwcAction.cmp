@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride,force:lightningQuickActionWithoutHeader" access="global" >
+    <aura:html tag="style">
+        .slds-modal__container{
+            max-width: 80% !important;
+            width:80% !important;
+        }
+    </aura:html>
+    <c:parentLWC recordId="{!v.recordId}" onclose="{!c.closeComponent}"/>
+</aura:component>
